@@ -17,6 +17,7 @@ Este proyecto está en sus primeras etapas de desarrollo y se trata de una simpl
    - ![Captura de Pantalla 2](./img/desktop-2.jpeg)
 
 ## Instrucciones de Uso 📋
+Les mantendremos informados durante cada fase de evolución. 📈 Permanezcan atentos para recibir las últimas actualizaciones
 
 1. **Clonación del Repositorio:**
    ```bash
