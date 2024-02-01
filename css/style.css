@@ -30,6 +30,7 @@ header {
 }
 
 .head {
+  text-align: center;
   padding: 0;
   height: 100%;
   display: flex;
@@ -49,6 +50,7 @@ header {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  user-select: none;
 }
 
 .menu-navegacion {
@@ -62,7 +64,6 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* transition: transform .3s ease-in-out; */
   transform: translate(110%);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
@@ -144,6 +145,7 @@ header {
 }
 
 .img-galeria {
+  object-fit: cover;
   width: 30%;
   display: block;
   margin-bottom: 15px;
@@ -170,11 +172,15 @@ header {
 }
 
 .agregar-imagen {
+  object-fit: cover;
   width: 60%;
   border-radius: 10px;
   transform: scale(0);
-  transition: trasnform .3s .2s; 
-
+  transition: trasnform .3s .2s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
 }
 
  .showImage {
@@ -277,11 +283,99 @@ footer {
   margin-bottom: 60px;
 }
 
-.bx {
+/*Media queries 800px*/
+
+@media screen and (max-width: 800px) {
+  .menu-navegacion {
+    width: 50vw;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .contenedor-servicio img {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .checklist-servicios {
+    width: 80%;
+  }
+
+  .service {
+    margin-bottom: 30px;
+  }
+
+  .agregar-imagen {
+    width: 80%;
+  }
+
+  .img-galeria {
+    width: 45%;
+  }
+
+  .cont-expert {
+    width: 80%;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+
+  .social-media {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
+
+  .social-media-icon {
+    margin-left: 0;
+  }
+  .social-media i{
+    margin-left: 0;
+  }
+
+  .contact-us {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+  }
 }
-.bxl-facebook {
-}
-.bxl-twitter {
-}
-.bxl-instagram {
+
+/*Media queries 300px*/
+
+@media screen and (max-width: 500px) {
+  .menu-navegacion {
+    width: 65vw;
+  }
+
+  .hamburger {
+    top: 20px;
+    right: 20px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .subtitulos {
+    font-size: 30px;
+  }
+
+  .agregar-imagen {
+    width: 95%;
+  }
+
+  .img-galeria {
+    width: 95%;
+  }
+
+  .social-media {
+    width: 100%;
+  }
+
+  .contact-us {
+    width: 90%;
+  }
 }
